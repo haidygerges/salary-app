@@ -12,7 +12,10 @@ A modern, beautiful salary calculation web application built with HTML, CSS, and
 - Data persistence using LocalStorage
 
 ## 🚀 Live Demo
-If you use VS Code, install the [Live Server](https://haidygerges.github.io/salary-app/) extension and click **Go Live**.
+
+**🌐 [Open Salary App](https://haidygerges.github.io/salary-app/)**
+
+> Experience the full application with glassmorphism design and real-time salary calculations.
 
 ## 🛠 Technologies
 - HTML5
