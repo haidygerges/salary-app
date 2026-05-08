@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile — Salary App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="min-h-screen bg-gray-950 text-white relative">
+    <div class="orb w-96 h-96 bg-emerald-400 -top-20 -right-20"></div>
+    <div class="orb w-80 h-80 bg-blue-500 bottom-0 left-0"></div>
+
+   
+    <header class="sticky top-0 z-50 border-b border-white/10" style="background: rgba(10,12,20,0.85); backdrop-filter: blur(20px);">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-400 to-blue-500 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <span class="font-semibold text-lg tracking-tight">Salary<span class="text-emerald-400">App</span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-10">
+        
+        <div class="flex items-center gap-4 mb-8">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400/20 to-blue-500/20 border border-emerald-400/20 flex items-center justify-center">
+                <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                </svg>
+            </div>
+            <div>
+                <h1 class="text-2xl font-semibold tracking-tight">My Profile</h1>
+                <p class="text-white/40 text-sm">Your salary details and breakdown</p>
+            </div>
+        </div>
+
+        
+        <div class="glass rounded-2xl overflow-hidden">
+            <div class="px-6 py-4 border-b border-white/10">
+                <h2 class="font-semibold">Salary Breakdown</h2>
+                <p class="text-white/40 text-xs mt-0.5">All amounts in EGP</p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="data-table w-full">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Name</th>
+                            <th rowspan="2">Basic</th>
+                            <th rowspan="2">Bonus</th>
+                            <th rowspan="2">Penalty</th>
+                            <th colspan="3" style="border-left: 1px solid rgba(110,231,183,0.2);">Extra Hours</th>
+                            <th rowspan="2" style="border-left: 1px solid rgba(110,231,183,0.2);">Gross</th>
+                            <th colspan="2" style="border-left: 1px solid rgba(110,231,183,0.2);">Taxes</th>
+                            <th rowspan="2" style="border-left: 1px solid rgba(110,231,183,0.2);">Net Salary</th>
+                        </tr>
+                        <tr>
+                            <th style="border-left: 1px solid rgba(110,231,183,0.2);">No. of Hours</th>
+                            <th>Hour Value</th>
+                            <th>Total</th>
+                            <th style="border-left: 1px solid rgba(110,231,183,0.2);">Rate</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div id="emptyState" class="text-center py-16 text-white/25">
+                    <svg class="w-12 h-12 mx-auto mb-3 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <p class="text-sm">No salary data found</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
